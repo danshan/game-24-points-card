@@ -4,7 +4,7 @@ import { RefreshCw, HelpCircle, CheckCircle2, AlertCircle, Delete, Play, Info, T
 import confetti from 'canvas-confetti';
 import { generateCards, evaluateExpression, validateCardUsage, solve24 } from './lib/gameLogic';
 
-const cardCover = '/card_cover.jpg';
+const cardCover = '/cover.jpg';
 
 export default function App() {
   const [cards, setCards] = useState<number[]>([]);
@@ -367,6 +367,10 @@ export default function App() {
                       alt="Card Back"
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        // Fallback to a nice placeholder if the local image is missing
+                        e.currentTarget.src = "https://images.unsplash.com/photo-1541690161184-75cbc0386cd6?q=80&w=1000&auto=format&fit=crop";
+                      }}
                     />
                   </div>
                 </motion.button>

@@ -1,0 +1,5 @@
+{
+  "name": "24 Points Card Game",
+  "description": "A classic mathematical card game where you use four cards and basic arithmetic to reach the number 24.",
+  "requestFramePermissions": []
+}

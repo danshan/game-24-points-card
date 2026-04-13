@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { RefreshCw, HelpCircle, CheckCircle2, AlertCircle, Delete, Play, Info, Trophy } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import cardCover from './assets/card_cover.jpg';
+import cardCover from './assets/card_cover.jpg?url';
 import { generateCards, evaluateExpression, validateCardUsage, solve24 } from './lib/gameLogic';
 
 export default function App() {

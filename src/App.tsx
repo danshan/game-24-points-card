@@ -2,9 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { RefreshCw, HelpCircle, CheckCircle2, AlertCircle, Delete, Play, Info, Trophy } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import cardCover from './assets/cover.jpg';
 import { generateCards, evaluateExpression, validateCardUsage, solve24 } from './lib/gameLogic';
-
-const cardCover = '/cover.jpg';
 
 export default function App() {
   const [cards, setCards] = useState<number[]>([]);
